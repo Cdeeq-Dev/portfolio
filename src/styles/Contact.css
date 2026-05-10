@@ -213,6 +213,17 @@
   font-size: 0.875rem;
 }
 
+@media (max-width: 1024px) {
+  .contact .container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .contact-form {
+    padding: var(--spacing-xl);
+  }
+}
+
 @media (max-width: 768px) {
   .contact .container {
     grid-template-columns: 1fr;

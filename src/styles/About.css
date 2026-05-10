@@ -323,6 +323,20 @@
   width: var(--proficiency);
 }
 
+@media (max-width: 1024px) {
+  .about .container {
+    gap: var(--spacing-xl);
+  }
+
+  .about-card {
+    padding: var(--spacing-lg);
+  }
+
+  .about-skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
 @media (max-width: 768px) {
   .about .container {
     gap: var(--spacing-xl);

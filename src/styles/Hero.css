@@ -173,12 +173,11 @@
   display: block;
   width: 100%;
   height: 100%;
-  object-fit:'';
+  object-fit: cover;
   object-position: center;
   border-radius: 50%;
   background: #000;
   transition: all 0.5s ease;
-  transition: 0.5s ease;
 }
 
 .hero-avatar-frame:hover .hero-avatar-img {
@@ -316,4 +315,34 @@
   .hero-actions, .hero-stats { justify-content: center; }
   .hero-offers { grid-template-columns: 1fr; }
   .hero-avatar-frame { width: 300px; height: 300px; }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 0 60px;
+  }
+
+  .hero .container {
+    gap: 60px;
+  }
+
+  .hero-avatar-frame { 
+    width: 250px; 
+    height: 250px; 
+  }
+
+  .hero-badge {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
 }

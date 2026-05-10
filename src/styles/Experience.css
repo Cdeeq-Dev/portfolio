@@ -109,6 +109,22 @@
   margin-top: var(--spacing-xs);
 }
 
+@media (max-width: 1024px) {
+  .experience .container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .experience-sidebar {
+    position: static;
+    text-align: center;
+  }
+
+  .experience-resume-btn {
+    align-self: center;
+  }
+}
+
 @media (max-width: 768px) {
   .experience .container {
     grid-template-columns: 1fr;

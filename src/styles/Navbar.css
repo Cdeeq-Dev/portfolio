@@ -21,6 +21,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
 }
 
 .navbar-logo {
@@ -100,6 +102,16 @@
 
 .hamburger.active .hamburger-line:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -6px);
+}
+
+@media (max-width: 1024px) {
+  .navbar-nav {
+    gap: var(--spacing-md);
+  }
+
+  .navbar-links {
+    gap: var(--spacing-md);
+  }
 }
 
 @media (max-width: 768px) {
